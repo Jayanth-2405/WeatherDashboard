@@ -11,6 +11,13 @@
   min-height: 100vh;
   justify-content: space-evenly;
   flex-direction: column;
+  background-image: url(assets/pexels-pixabay-459203.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
 }
 
 .header {
@@ -18,8 +25,9 @@
   background-color: #4CAF50;
   color: #fffefe;
   padding-bottom: 10px;
-  border-radius: 5rem;
-  margin-top: 10px;
+  border-radius: 50px;
+  
+ 
 }
 
 .weather-widget,
@@ -27,7 +35,7 @@
 .forecast,
 .alerts,
 .event-planner {
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 10px;
   border: 1px solid #ddd;
   width: 300px;
@@ -36,6 +44,7 @@
   flex-wrap: wrap;
   color: orange;
   justify-content: center;
+  font-weight: bold;
  
   
 }
@@ -58,6 +67,10 @@
   flex-direction:row;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: hwb(249 0% 8% / 0.975);
+  font-weight: bold;
+  background-color: hsla(0, 100%, 100%, 0.576);
+
 }
 
 
