@@ -12,7 +12,7 @@ function App() {
   const [alerts, setAlerts] = useState([]);
   const [events, setEvents] = useState([]);
 
-  // Declare apiKey once at the top
+  
   const apiKey = '77b754ef5a20ab0a08e69f5feeddf4ed'; // Replace with your actual API key
 
   const fetchWeatherData = async (location) => {
@@ -22,15 +22,13 @@ function App() {
       );
       const data = await response.json();
 
-      // Check if the API call was successful
+      
       if (data.cod === 200) {
         setWeather({
           location: data.name,
           temperature: data.main.temp,
           condition: data.weather[0].main.toLowerCase(),
         });
-
-        // Fetch additional data like forecast and alerts
         fetchForecast(location);
        
       } else {
